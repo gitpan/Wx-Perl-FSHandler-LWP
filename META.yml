@@ -1,16 +1,22 @@
---- #YAML:1.0
+---
 name: Wx-Perl-FSHandler-LWP
-version: 0.01
+version: 0.02
+author:
+  - 'Mattia Barbon <mbarbon@cpan.org>'
+abstract: file system handler based upon LWP
 license: perl
-distribution_type: module
+resources:
+  license: http://dev.perl.org/licenses/
 requires:
   IO::Scalar: 2
+  LWP: 5.7
+  Test::More: 0.48
   Wx: 0.13
-recommends: {}
-build_requires: {}
-conflicts: {}
 provides:
   Wx::Perl::FSHandler::LWP:
     file: lib/Wx/Perl/FSHandler/LWP.pm
-    version: 0.01
-generated_by: Module::Build version 0.18
+    version: 0.02
+generated_by: Module::Build version 0.2805
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
